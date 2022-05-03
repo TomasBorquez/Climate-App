@@ -10,9 +10,9 @@ export default function Card(props) {
       </div>
       <h2>{name}</h2>
       <ul>
+        <li><img src={`http://openweathermap.org/img/wn/${img}@2x.png`} alt="algo"/></li>
         <li>Max: {max}</li>
         <li>Min: {min}</li>
-        <li><img src={`http://openweathermap.org/img/wn/${img}@2x.png`} alt="algo"/></li>
       </ul>
     </div>
   )};
