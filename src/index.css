@@ -8,6 +8,144 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+img {
+  margin-top: 10px;
+  width: 100px;
+  height: 100px;
+  background-color: #242830;
+  border-radius: 30cm;
+}
+
+hr {
+  width: 95%;
+  height: 2px;
+  background: rgb(86, 86, 86);
+}
+
+.zeRow > div {
+  display: flex;
+  position: relative;
+  flex-direction:row;
+  flex-wrap: wrap;
+}
+
+.card ul {
+  list-style: none;
+  text-align: center;
+  width: 87%;
+}
+
+.card h2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 58px;
+  margin-top: 13px;
+  animation-name: colors;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.card li {
+  font-size: 25px;
+}
+
+
+.card {
+  margin: 25px;
+  width: 300px;
+  height: 300px;
+  background-color: #191c21;
+  border-radius: 15px;
+}
+
+#button {
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#close {
+  background-color: #191c21;
+  color: gray;
+  font-size: 25px;
+  font-weight: 600;
+  width: 40px;
+  height: 40px;
+  padding-bottom: 10px;
+  border-radius: 50%;
+  border: none;
+  text-align: center;
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  transition: 0.3s all ease;
+}
+
+#close:hover {
+  color: rgb(196, 71, 71);
+}
+
+#add {
+  border-style: solid;
+  background-color:#282c34;
+  box-shadow: none;
+  border-radius: 10px;
+  font-size: 20px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  font-weight: 480;
+}
+
+#add:hover {
+  color: white;
+  background-color: #28a745;
+}
+
+#input {
+  border: none;
+  border-radius: 10px;
+  margin-right: 10px;
+  font-size: 23px;
+  width: 300px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 8px;
+  font-weight: 480;
+}
+
+#zeSearch {
+  margin-top: 10px;
+  margin-bottom: 27px;
+  position: relative;
+}
+
+@keyframes colors {
+  0% {
+    color: white;
+    text-shadow: 4px 3px 0 #383838;
+  }
+  25% {
+    color: rgb(159, 181, 204);    
+    text-shadow: 4px 3px 0 #383838;
+  }
+  50% {
+    color: rgb(115, 145, 173);
+    text-shadow: 4px 3px 0 #383838;
+  }
+  75% {
+    color: rgb(159, 181, 204);    
+    text-shadow: 4px 3px 0 #383838;
+  }
+  100% {
+    color: white;
+    text-shadow: 4px 3px 0 #383838;
+  }
 }
