@@ -6,7 +6,7 @@ export default function Cards(props) {
   // tip, podés usar un map
   var cities = props.cities
   return (
-    <div>
+    <>
       {cities.map((city, i) => {
         return <Card max={city.main.temp_max} 
           min={city.main.temp_min} 
@@ -16,5 +16,5 @@ export default function Cards(props) {
           key={i}
           />
         })}
-    </div>
+    </>
   )};

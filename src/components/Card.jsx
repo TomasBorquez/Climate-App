@@ -1,8 +1,7 @@
 import React from 'react';
 
-export default function Card(props) {
+export default function Card( {img, max, min, onClose, name} ) {
   // acá va tu código
-  const {img, max, min, onClose, name} = props
   return (
     <div className="card">
       <div id="button">
