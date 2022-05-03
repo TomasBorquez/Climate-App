@@ -5,9 +5,12 @@ export default function SearchBar(props) {
   const {onSearch} = props
   const city = useRef()
   return (
-    <div>
-        <input id="input" ref={city} type="text" placeholder="Ciudad..."></input>
-        <input className='btn-outline-success' id="add" type="submit" value="Agregar" onClick={() => onSearch(city.current.value)}></input>
+    <div id="navy">
+        <h1 id="tittlePage">Climate App</h1>
+        <div id="theSearch">
+          <input id="input" ref={city} type="text" placeholder="Ciudad..."></input>
+          <input className='btn-outline-success' id="add" type="submit" value="Agregar" onClick={() => onSearch(city.current.value)}></input>
+        </div>
     </div>
   )
 };

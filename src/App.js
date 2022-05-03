@@ -7,12 +7,13 @@ import data from './data.js';
 function App() {
   return (
     <div className="App">
-      <div id="zeSearch">
+    <nav id="navie">
+      <div>
         <SearchBar onSearch={(cities) => alert(cities)}/>
       </div>
-      <hr></hr>
+    </nav>
       <div id="zeRow">
-        <Cards cities={data} class={"zerow"}/>
+        <Cards cities={data}/>
       </div>
     </div>
   );
