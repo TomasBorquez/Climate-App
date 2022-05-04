@@ -1,11 +1,12 @@
 import React from 'react';
+import stylesC from "./Card.module.css"
 
 export default function Card( {img, max, min, onClose, name} ) {
   // acá va tu código
   return (
-    <div className="card">
-      <div id="button">
-        <button id="close" onClick={onClose}>x</button>
+    <div className={stylesC.card}>
+      <div id={stylesC.closeBtnPos}>
+        <button id={stylesC.closeBtn} onClick={onClose}>x</button>
       </div>
       <h2>{name}</h2>
       <ul>
