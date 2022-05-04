@@ -28,9 +28,11 @@
   box-shadow: none;
   border-radius: 10px;
   font-size: 21px;
-  padding-top: 3px;
-  padding-bottom: 3px;
-  font-weight: 480;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  font-weight: 460;
 }
 
 #add:hover {
@@ -47,8 +49,8 @@
   color: white;
   font-size: 23px;
   width: 300px;
-  padding-top: 3px;
-  padding-bottom: 3px;
+  padding-top: 4.5px;
+  padding-bottom: 4.5px;
   padding-left: 8px;
   font-weight: 600;
 }
