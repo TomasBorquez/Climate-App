@@ -11,8 +11,8 @@ export default function Card( {img, max, min, onClose, name} ) {
       <h2>{name}</h2>
       <ul>
         <li><img src={"https://openweathermap.org/img/wn/" + img + "@2x.png"} alt=""/></li>
-        <li>Max: {max}°</li>
-        <li>Min: {min}°</li>
+        <li id={stylesC.average}>Avg: {(max + min) / 2}°</li>
+        <li>Min: {min}°  Max: {max}°</li>
       </ul>
     </div>
   )
