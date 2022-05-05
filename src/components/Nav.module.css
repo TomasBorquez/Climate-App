@@ -1,4 +1,5 @@
 #tittlePage {
+  margin-top: 4px;
   text-align: center;
   font-weight: 800;
   font-size: 40px;
@@ -7,14 +8,45 @@
 }
 
 #navy {
+  flex-wrap: wrap;
   margin-left: 0.60%;
   display: flex;
   justify-content: space-between;
-  flex-direction: row;
 }
 
 #theSearch {
   margin-top: 10px;
   margin-bottom: 10px;
   margin-right: 0.60%;
+}
+
+#icon {
+  margin-top: 7px;
+  width: 55px;
+  height: 50px;
+}
+
+#n {
+  display: flex;
+}
+
+@media (max-width: 820px) {
+  #tittlePage {
+    display: none;
+  }
+  #icon {
+    display: none;
+  }
+  #n {
+    flex-direction: column;
+  }
+  #navy {
+    flex-direction: column;
+    align-content: center;
+  }
+  #theSearch {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
