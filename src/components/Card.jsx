@@ -10,7 +10,7 @@ export default function Card( {img, max, min, onClose, name} ) {
       </div>
       <h2>{name}</h2>
       <ul>
-        <li><img src={"http://openweathermap.org/img/wn/" + img + "@2x.png"} alt=""/></li>
+        <li><img src={"https://openweathermap.org/img/wn/" + img + "@2x.png"} alt=""/></li>
         <li>Max: {max}°</li>
         <li>Min: {min}°</li>
       </ul>
