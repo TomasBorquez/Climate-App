@@ -1,8 +1,10 @@
 import React from 'react';
 import Card from './Card.jsx';
+import styles from "./Cards.module.css"
 
 export default function Cards({ cities, onClose }) {
-  if (cities) {
+  console.log(cities.length)
+  if (cities.length) {
     return (
       <>
         {cities.map(c => (
@@ -18,7 +20,6 @@ export default function Cards({ cities, onClose }) {
         ))}
       </>
     );
-  } else {
-    return <div>Sin ciudades</div>;
   }
+  return (<div id={styles.empty}><h1>Sin ciudades</h1></div>)
 }
