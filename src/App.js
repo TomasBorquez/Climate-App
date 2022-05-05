@@ -3,6 +3,7 @@ import Nav from './components/Nav.jsx';
 import Cards from './components/Cards.jsx';
 import './App.css';
 
+
 function App() {
   const [cities, setCities] = useState([]);
 
@@ -24,6 +25,9 @@ function App() {
           latitud: recurso.coord.lat,
           longitud: recurso.coord.lon
         };
+        var checkCities = (cities, cuC) => cities.filter(c => c.name === cuC.name);
+        // now check
+        if (checkCities(cities, ciudad).length) return alert("Esta ciudad ya existe")
         setCities(oldCities => [...oldCities, ciudad]);
       } else {
         alert("Ciudad no encontrada");
@@ -34,7 +38,7 @@ function App() {
   function onClose(id) {
     setCities(oldCities => oldCities.filter(c => c.id !== id));
   }
-  
+
   return (
     <div className="App">
       <nav id="navie">
@@ -46,5 +50,6 @@ function App() {
     </div>
   );
 }
+
 
 export default App;
