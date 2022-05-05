@@ -1,11 +1,11 @@
-#closeBtnPos {
+.closeBtnPos {
   position: relative;
   text-align: center;
   justify-content: center;
   align-items: center;
 }
 
-#closeBtn {
+.closeBtn {
   background-color: #191c21;
   color: gray;
   font-size: 25px;
@@ -24,7 +24,7 @@
   transition: 0.3s all ease;
 }
 
-#closeBtn:hover {
+.closeBtn:hover {
   color: rgb(196, 71, 71);
 }
 
@@ -51,7 +51,7 @@
 .card h2 {
   text-align: center;
   font-weight: bold;
-  font-size: 58px;
+  font-size: 275%;
   margin-top: 13px;
   animation-name: colors;
   animation-duration: 4s;

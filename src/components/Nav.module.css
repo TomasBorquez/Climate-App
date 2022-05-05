@@ -1,0 +1,20 @@
+#tittlePage {
+  text-align: center;
+  font-weight: 800;
+  font-size: 40px;
+  color: #c6c6c6;
+  text-shadow: 1px 0px 1px #6b6b6b, 0px 1px 1px #6b6b6b, 2px 1px 1px #6b6b6b, 1px 2px 1px #6b6b6b, 3px 2px 1px #6b6b6b, 2px 3px 1px #6b6b6b, 4px 3px 1px #6b6b6b, 3px 4px 1px #6b6b6b, 5px 4px 1px #6b6b6b, 4px 5px 1px #6b6b6b, 6px 5px 1px #6b6b6b, 5px 6px 1px #6b6b6b, 7px 6px 1px #6b6b6b;
+}
+
+#navy {
+  margin-left: 0.60%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+#theSearch {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 0.60%;
+}

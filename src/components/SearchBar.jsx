@@ -1,17 +1,34 @@
-import React, {useRef} from 'react';
-import stylesS from "./SearchBar.module.css"
+import React from "react";
+import stylesS from './SearchBar.module.css';
 
-export default function SearchBar(props) {
-  // acá va tu código
-  const {onSearch} = props
-  const city = useRef()
+export default function SearchBar( {onSearch} ) {
+  var object = {
+    city: ""
+  }
+  
+  var handleChange = (e) => {
+    object.city = e.target.value
+  }
+
   return (
-    <div id={stylesS.navy}>
-        <h1 id={stylesS.tittlePage}>Climate App</h1>
-        <div id={stylesS.theSearch}>
-          <input id={stylesS.input} ref={city} type="text" placeholder="Ciudad..."></input>
-          <input className='btn-outline-success' id={stylesS.add} type="submit" value="Agregar" onClick={() => onSearch(city.current.value)}></input>
-        </div>
-    </div>
-  )
-};
+    <form onSubmit={(e) => {
+      e.preventDefault();
+      console.log(object.city);
+      onSearch(object.city);
+      }}>
+      {/* input bar */}
+      <input 
+      id={stylesS.input}
+      type="text" 
+      placeholder="Ciudad..."
+      onChange={handleChange}
+      />
+      {/* this is the add button */}
+      <input 
+      id={stylesS.add}
+      type="submit" 
+      value="Agregar"
+      />
+    </form>
+  );
+}
