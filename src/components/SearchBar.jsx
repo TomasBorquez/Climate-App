@@ -13,7 +13,8 @@ export default function SearchBar( {onSearch} ) {
   return (
     <form onSubmit={(e) => {
       e.preventDefault();
-      console.log(object.city);
+      var elToChange = document.getElementById("SearchBar_input__6MjLt");
+      elToChange.value = null
       onSearch(object.city);
       }}>
       {/* input bar */}
