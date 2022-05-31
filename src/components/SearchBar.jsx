@@ -17,7 +17,7 @@ export default function SearchBar( {onSearch} ) {
       elToChange.value = null
       onSearch(object.city);
       }}>
-      <img id={stylesS.icon} src="https://cdn.discordapp.com/attachments/706958964126122014/971864972487442442/temperature_icon.png" alt=""></img>
+      <img id={stylesS.icon} src="https://cdn.discordapp.com/attachments/706958964126122014/971864972487442442/temperature_icon.png" alt=""/>
       {/* input bar */}
       <input 
       id={stylesS.input}

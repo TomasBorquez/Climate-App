@@ -3,7 +3,6 @@ import Card from './Card.jsx';
 import styles from "./Cards.module.css"
 
 export default function Cards({ cities, onClose }) {
-  console.log(cities.length)
   if (cities.length) {
     return (
       <>
